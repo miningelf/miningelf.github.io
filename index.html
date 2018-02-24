@@ -1,1 +1,222 @@
-The elf is mining.
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Floating Header Blog Pattern</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600'>
+
+  <style type="text/css">
+    body {
+  font-family: "Source Sans Pro";
+  margin: 0;
+  color: #222;
+  font-weight: 200;
+}
+a {
+  color: #ffa07a;
+}
+p,
+blockquote {
+  line-height: 1.6em;
+}
+p {
+  margin: 0 0 2em;
+}
+blockquote {
+  border-left: 1px solid #ddd;
+  margin: 0 0 1em;
+  padding: 0 0 0 1.5em;
+}
+h1,
+h2 {
+  font-weight: 200;
+  color: #666;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.4em;
+  margin: 0;
+}
+.date {
+  color: #ccc;
+  font-weight: 200;
+}
+.canvas {
+  max-width: 80em;
+  margin: 0 auto;
+  padding: 0 2em 10em;
+}
+.page-header {
+  padding: 2em 0 1em;
+  margin: 0 0 4em;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+.page-header h1 {
+  margin: 0;
+  padding: 0 0 0.2em;
+  display: inline-block;
+}
+.page-header .summary {
+  letter-spacing: 0.2em;
+  color: #999;
+}
+article {
+  margin: 0 0 6em;
+  padding: 0 0 6em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+article:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 30em;
+  left: 50%;
+  font-size: 1em;
+  border-bottom: 1px solid #ccc;
+  margin-left: -15em;
+  bottom: 0;
+  z-index: 1;
+}
+article:before {
+  content: '\021D5';
+  display: block;
+  position: absolute;
+  text-align: center;
+  color: #ccc;
+  font-size: 1.4em;
+  top: 100%;
+  left: 50%;
+  width: 1.6em;
+  height: 1.5em;
+  padding: 0.1em 0 0;
+  margin: -0.8em 0 0 -0.8em;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: #fff;
+  z-index: 2;
+}
+article:last-child:after,
+article:last-child:before {
+  display: none;
+}
+@media screen and (min-width: 40em) {
+  .sticky .stick {
+    position: fixed;
+    top: 0;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    opacity: 1;
+    width: calc(45% - 5.8em);
+  }
+  .sticky.hide .stick {
+    opacity: 0;
+  }
+  article {
+    position: relative;
+  }
+  article {
+    display: table;
+  }
+  article .content,
+  article header {
+    display: table-cell;
+    vertical-align: top;
+  }
+  article .content h2,
+  article header h2 {
+    margin: 0 0 0.4em;
+  }
+  article .content {
+    font-size: 1.2em;
+  }
+  article header {
+    width: 45%;
+    padding-right: 4em;
+  }
+}
+  </style>
+
+  
+</head>
+
+<body>
+
+  
+<div class="canvas">
+  <header class="page-header">
+    <h1>Floating Headers</h1>
+    <p class="summary">A Simplistic Blog Pattern</p>
+  </header>
+  <section>
+    <article>
+      <header>
+        <div class="stick">
+          <h2>Simple Post With a Longer Header</h2>
+          <p class="date">
+             by <a href="#">Sly Stallone </a>on Nov. 12th 2014</p>
+        </div>
+      </header>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Etiam non sodales dui. Sed sagittis tincidunt massa, quis porta mi finibus vel. </p>
+        <p>Aliquam ornare porttitor dapibus. Ut non quam tellus. Ut at urna feugiat tellus maximus consectetur. Integer tincidunt sapien ac nibh faucibus mattis. Nulla enim purus, auctor condimentum metus efficitur, commodo rutrum diam. Nunc non libero dolor.</p>
+        <blockquote>Donec in fermentum ex, a commodo nulla. Nam imperdiet lacinia nunc nec varius. Ut mattis eget sapien non pellentesque. Curabitur vestibulum eu enim in mattis. Praesent rutrum, magna in venenatis placerat, nibh ex commodo nisl, ac bibendum mauris lectus non ligula.</blockquote>
+        <p>Donec in fermentum ex, a commodo nulla. Nam imperdiet lacinia nunc nec varius. Ut mattis eget sapien non pellentesque. Curabitur vestibulum eu enim in mattis. Praesent rutrum, magna in venenatis placerat, nibh ex commodo nisl, ac bibendum mauris lectus non ligula.</p>
+        <p>Donec in fermentum ex, a commodo nulla. Nam imperdiet lacinia nunc nec varius. Ut mattis eget sapien non pellentesque. Curabitur vestibulum eu enim in mattis. Praesent rutrum, magna in venenatis placerat, nibh ex commodo nisl, ac bibendum mauris lectus non ligula.</p>
+      </div>
+    </article>
+    <article>
+      <header>
+        <div class="stick">
+          <h2>Yet Another Post</h2>
+          <p class="date">
+             by <a href="#">Sly Stallone </a>on Nov. 12th 2014</p>
+        </div>
+      </header>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Etiam non sodales dui. Sed sagittis tincidunt massa, quis porta mi finibus vel. </p>
+        <p>Aliquam ornare porttitor dapibus. Ut non quam tellus. Ut at urna feugiat tellus maximus consectetur. Integer tincidunt sapien ac nibh faucibus mattis. Nulla enim purus, auctor condimentum metus efficitur, commodo rutrum diam. Nunc non libero dolor.</p>
+        <blockquote>Donec in fermentum ex, a commodo nulla. Nam imperdiet lacinia nunc nec varius. Ut mattis eget sapien non pellentesque. Curabitur vestibulum eu enim in mattis. Praesent rutrum, magna in venenatis placerat, nibh ex commodo nisl, ac bibendum mauris lectus non ligula.</blockquote>
+        <p>Donec in fermentum ex, a commodo nulla. Nam imperdiet lacinia nunc nec varius. Ut mattis eget sapien non pellentesque. Curabitur vestibulum eu enim in mattis. Praesent rutrum, magna in venenatis placerat, nibh ex commodo nisl, ac bibendum mauris lectus non ligula.</p>
+        <p>Donec in fermentum ex, a commodo nulla. Nam imperdiet lacinia nunc nec varius. Ut mattis eget sapien non pellentesque. Curabitur vestibulum eu enim in mattis. Praesent rutrum, magna in venenatis placerat, nibh ex commodo nisl, ac bibendum mauris lectus non ligula.</p>
+      </div>
+    </article>
+    <article>
+      <header>
+        <div class="stick">
+          <h2>A Hello World Post</h2>
+          <p class="date">
+             by <a href="#">Sly Stallone </a>on Nov. 12th 2014</p>
+        </div>
+      </header>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Etiam non sodales dui. Sed sagittis tincidunt massa, quis porta mi finibus vel. </p>
+        <p>Aliquam ornare porttitor dapibus. Ut non quam tellus. Ut at urna feugiat tellus maximus consectetur. Integer tincidunt sapien ac nibh faucibus mattis. Nulla enim purus, auctor condimentum metus efficitur, commodo rutrum diam. Nunc non libero dolor.</p>
+        <blockquote>Donec in fermentum ex, a commodo nulla. Nam imperdiet lacinia nunc nec varius. Ut mattis eget sapien non pellentesque. Curabitur vestibulum eu enim in mattis. Praesent rutrum, magna in venenatis placerat, nibh ex commodo nisl, ac bibendum mauris lectus non ligula.</blockquote>
+        <p>Donec in fermentum ex, a commodo nulla. Nam imperdiet lacinia nunc nec varius. Ut mattis eget sapien non pellentesque. Curabitur vestibulum eu enim in mattis. Praesent rutrum, magna in venenatis placerat, nibh ex commodo nisl, ac bibendum mauris lectus non ligula.</p>
+        <p>Donec in fermentum ex, a commodo nulla. Nam imperdiet lacinia nunc nec varius. Ut mattis eget sapien non pellentesque. Curabitur vestibulum eu enim in mattis. Praesent rutrum, magna in venenatis placerat, nibh ex commodo nisl, ac bibendum mauris lectus non ligula.</p>
+      </div>
+    </article>
+  </section>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
